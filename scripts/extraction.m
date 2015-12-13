@@ -22,5 +22,12 @@ for i = 5:size(folderNames, 1)
     listener_gender, file_name, folder_name);
 end
 
+word = word';
+video_type = video_type';
+speaker_gender = speaker_gender';
+listener_gender = listener_gender';
+file_name = file_name';
+folder_name = folder_name';
 TT = table(word, video_type, speaker_gender, listener_gender, file_name, folder_name);
+
 writetable(TT, 'dictionary.dat');

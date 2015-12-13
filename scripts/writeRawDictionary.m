@@ -32,7 +32,7 @@ function [word, video_type, speaker_gender, listener_gender, file_name, folder_n
             
             for k=1:annotationValues.getLength - 1
                 temp = annotationValues.item(k).getFirstChild.getData;
-                word = insertElement(word, temp(1));
+                word = insertElement(word, {char(temp(1))});
                 
                 video_type = insertElement(video_type, {vt{1}(1)});
                 speaker_gender = insertElement(speaker_gender, speakergen);
