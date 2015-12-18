@@ -32,6 +32,7 @@ function [word, function_type, movement_type, is_unfinished_sign,...
             xmlFile = xmlread(Files(i).name);
             annotationNodes = xmlFile.getElementsByTagName('ALIGNABLE_ANNOTATION');
             
+            
             for k=0:annotationNodes.getLength - 1
                 ts1 = annotationNodes.item(k).getAttribute('TIME_SLOT_REF1');
                 ts1 = str2double(regexprep(char(ts1), '\D', ''));
