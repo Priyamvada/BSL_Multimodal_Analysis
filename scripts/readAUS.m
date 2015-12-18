@@ -1,7 +1,7 @@
 dictionary = readtable('dictionaryFiltered.dat');
 filenames = unique(dictionary.file_name);
 
-for i=1:size(filenames,1)
+for i=51:size(filenames,1)
     xmlFile = xmlread(filenames{i});
     n_elants = xmlFile.getElementsByTagName('TIME_SLOT').getLength;
     
