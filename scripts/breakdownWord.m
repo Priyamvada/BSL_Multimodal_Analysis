@@ -64,7 +64,12 @@ function [raw_word, function_type, movement_type, is_unfinished_sign]...
     raw_word = strrep(raw_word, '(', '');
     raw_word = strrep(raw_word, ')', '');
     
-    temp = regexp(raw_word, '^[A-Z][A-Z,:, ,-]*', 'match');
+    if size(regexp(word, 'PT:','match'),1) > 0
+        temp = regexp(raw_word, '^[A-Z][A-Z,:, ,-,0-9]*', 'match');
+    else
+        temp = regexp(raw_word, '^[A-Z][A-Z,:, ,-]*', 'match');
+    end
+    
 
     if size(temp, 1) > 0
         raw_word = temp{1};
