@@ -8,11 +8,11 @@ for i=1:size(filenames);
     filename = strsplit(filenames{i}, '.eaf');
     filename = filename{1};
     
-    if ~exist(sprintf('%s_pose.txt',filename),'file')
+    if ~exist(sprintf('%s_aus.txt',filename),'file')
         continue;
     end
     
-    aus_table = readtable(sprintf('%s_pose.txt',filename));
+    aus_table = readtable(sprintf('%s_aus.txt',filename));
     n_clmts = size(aus_table, 1);
     factor = n_clmts/n_elants;
     
@@ -46,5 +46,5 @@ for i=1:size(filenames);
     time_stamp = time_stamp';
     word = word';
     annotatedTable = table(time_stamp, word);
-    writetable([annotatedTable aus_table], sprintf('%s_pose_annotated.dat', filename));
+    writetable([annotatedTable aus_table], sprintf('%s_aus_annotated.dat', filename));
 end
