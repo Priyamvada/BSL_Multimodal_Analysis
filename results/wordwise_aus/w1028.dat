@@ -1,0 +1,2 @@
+time_stamp,word,frame,success,confidence,AU01_r,AU02_r,AU04_r,AU05_r,AU06_r,AU09_r,AU10_r,AU12_r,AU14_r,AU15_r,AU17_r,AU20_r,AU25_r,AU26_r,AU04_c,AU12_c,AU15_c,AU23_c,AU28_c,AU45_c,speaker_gender,listener_gender
+15673,PARADE,1,1,0.733753,2.09257,1.82406,1.38053,0.853916,0,0,0,0,0.890526,0,0.576474,0.919514,0,0,1,0,0,1,0,0,m,w

@@ -7,7 +7,7 @@ temp = cell(size(basetable,1),1);
 temp(:,:) = {''};
 basetable = [basetable cell2table(temp,'VariableNames',{'speaker_gender'}) cell2table(temp,'VariableNames',{'listener_gender'})];
 
-    for j = 1:120
+    for j = 1:1400
         w = allwords.uniquewords{j};
         
         basetable(:,:) = [];

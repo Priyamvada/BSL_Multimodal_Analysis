@@ -1,0 +1,2 @@
+time_stamp,word,frame,success,confidence,AU01_r,AU02_r,AU04_r,AU05_r,AU06_r,AU09_r,AU10_r,AU12_r,AU14_r,AU15_r,AU17_r,AU20_r,AU25_r,AU26_r,AU04_c,AU12_c,AU15_c,AU23_c,AU28_c,AU45_c,speaker_gender,listener_gender
+13908,AGE-SEVEN,1,1,0.765416,0,0,0,1.06628,0,0,0.596839,0,0,0.585397,0,0,0,0,1,1,0,0,0,0,w,w

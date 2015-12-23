@@ -1,0 +1,2 @@
+time_stamp,word,frame,success,confidence,AU01_r,AU02_r,AU04_r,AU05_r,AU06_r,AU09_r,AU10_r,AU12_r,AU14_r,AU15_r,AU17_r,AU20_r,AU25_r,AU26_r,AU04_c,AU12_c,AU15_c,AU23_c,AU28_c,AU45_c,speaker_gender,listener_gender
+19422,REGION,1,1,0.897334,0.922438,0.543903,1.11341,0,0,1.47718,0,0,0.949334,0.855546,0.683572,1.75303,0,0,1,0,1,0,0,0,w,w
